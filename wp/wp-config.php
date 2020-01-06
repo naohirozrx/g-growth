@@ -35,7 +35,20 @@ if (strstr(@$_SERVER["SERVER_NAME"], 'localhost')) {
   define('WP_DEBUG', false);
   define('WP_HOME', 'http://'.$_SERVER['HTTP_HOST']);
   define('WP_SITEURL', 'http://'.$_SERVER['HTTP_HOST'].'/wp');
-  } else {
+  }
+  elseif(strstr(@$_SERVER["SERVER_NAME"], 'www.g-growth.com')) {
+    define('DB_NAME', 'g-growth');
+  define('DB_USER', 'root');
+  define('DB_PASSWORD', 'URgVcrEDnDXB');
+  define('DB_HOST', 'localhost');
+  define('DB_CHARSET', 'utf8');
+  define('DB_COLLATE', '');
+  //デバック有効化
+  define('WP_DEBUG', false);
+  define('WP_HOME', 'http://'.$_SERVER['HTTP_HOST']);
+  define('WP_SITEURL', 'http://'.$_SERVER['HTTP_HOST'].'/wp');
+  }
+ else {
 // ** MySQL 設定 - この情報はホスティング先から入手してください。 ** //
 /** WordPress のためのデータベース名 */
 define('DB_NAME', 'uek_co_jp');
