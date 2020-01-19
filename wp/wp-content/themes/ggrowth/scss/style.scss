@@ -666,6 +666,9 @@ a {
   width: 100%;
   overflow: hidden;
   position: relative;
+  .bx-controls-direction {
+    display: none !important;
+  }
   .top-inview {
     position: absolute;
     top: 0;

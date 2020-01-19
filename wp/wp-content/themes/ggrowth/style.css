@@ -568,6 +568,8 @@ a {
   width: 100%;
   overflow: hidden;
   position: relative; }
+  #top-image .bx-controls-direction {
+    display: none !important; }
   #top-image .top-inview {
     position: absolute;
     top: 0;
