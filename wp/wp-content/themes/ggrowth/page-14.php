@@ -9,8 +9,6 @@ jQuery(function($) {
 			$(this).stop().removeClass('mvcover');
 		}
 	});
-});
-jQuery(function($) {
 	$('#greeting-content').on('inview', function(event, isInView, visiblePartX, visiblePartY) {
 		if(isInView){
 			$(this).stop().addClass('mvcover');
@@ -19,8 +17,6 @@ jQuery(function($) {
 			$(this).stop().removeClass('mvcover');
 		}
 	});
-});
-jQuery(function($) {
 	$('#policy-content').on('inview', function(event, isInView, visiblePartX, visiblePartY) {
 		if(isInView){
 			$(this).stop().addClass('mvcover');

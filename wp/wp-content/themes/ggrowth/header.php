@@ -22,65 +22,12 @@ if (isset($_SESSION["count"])) {
 	<link rel="stylesheet" href="<?php bloginfo ('stylesheet_url'); ?>" type="text/css" />
 	<script src="https://use.typekit.net/mcr6xrc.js"></script>
 	<script>try{Typekit.load({ async: true });}catch(e){}</script>
-	<script defer src="https://use.fontawesome.com/releases/v5.0.6/js/all.js"></script>
-	<script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
-	<script src="<?php echo get_template_directory_uri(); ?>/js/jquery.inview.min.js"></script>
-	<script>
-
-	jQuery(document).ready(function($) {
-	//PC環境の場合
-	if (window.matchMedia( '(min-width: 741px)' ).matches) {　//切り替える画面サイズ
-
-	$(function() {
-	  var h = $(window).height();
-	  $('#loader-bg ,#loader').height(h).css('display','block');
-	});
-
-		$(window).load(function () { //全ての読み込みが完了したら実行
-		  	$('#loader-bg').delay(900).fadeOut(800);
-		  	$('#loader').delay(600).fadeOut(300);
-
-
-
-		//10秒たったら強制的にロード画面を非表示
-		$(function(){
-		  setTimeout('stopload()',10000);
-		});
-
-		function stopload(){
-		  $('#loader-bg').delay(900).fadeOut(800);
-		  $('#loader').delay(600).fadeOut(300);
-		};
-		});
-
-		setTimeout(function(){
-			var video = document.getElementById("video");
-			video.play();
-			var videoObj = document.getElementsByTagName("video")[0];
-				var ele = document.getElementsByTagName("output")[0];
-				var movie = document.getElementById("movie");
-				setTimeout(function(){
-					if(videoObj.ended == true) {
-						$('#movie').fadeOut(600);
-
-					}
-					setTimeout(arguments.callee, 250);
-				}, 250);
-		}, 1500);
-
-
-	//モバイル環境の場合
-	} else {
-
-
-	};
-});
-
-	</script>
-
-	<link rel="stylesheet" href="<?php echo get_template_directory_uri(); ?>/js/flickity/flickity.css" type="text/css" />
-	<script src="<?php echo get_template_directory_uri(); ?>/js/flickity/flickity.pkgd.min.js"></script>
-	<?php wp_head(); ?>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/bxslider/4.2.12/jquery.bxslider.css">
+  <script src="https://cdn.jsdelivr.net/bxslider/4.2.12/jquery.bxslider.min.js"></script>
+  <script src="<?php echo get_template_directory_uri(); ?>/js/jquery.inview.min.js"></script>
+  <script src="<?php echo get_template_directory_uri(); ?>/js/jquery.matchHeight-min.js"></script>
+  <link href="<?php echo get_template_directory_uri(); ?>/fontawesome/css/all.min.css" rel="stylesheet">
 </head>
 <body <?php body_class(); ?>>
 	<div id="loader-bg">
