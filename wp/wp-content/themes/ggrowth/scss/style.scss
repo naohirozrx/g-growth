@@ -2220,6 +2220,7 @@ a {
   background-attachment: fixed;
   height: 400px;
   position: relative;
+  overflow: hidden;
   .top-inview {
     position: absolute;
     top: 0;

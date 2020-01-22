@@ -1790,7 +1790,8 @@ a {
   background-size: cover;
   background-attachment: fixed;
   height: 400px;
-  position: relative; }
+  position: relative;
+  overflow: hidden; }
   #company-image .top-inview {
     position: absolute;
     top: 0;
