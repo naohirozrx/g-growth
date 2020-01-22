@@ -50,7 +50,9 @@ jQuery(function($) {
 	</dl>
 	<dl class="clearfix">
 		<dt>設立</dt>
-		<dd>昭和48年2月5日</dd>
+		<dd>（昭和48年2月5日に旧有限会社上原工業所を設立）<br />
+		  平成27年7月17日 社名を株式会社G-GROWTHに改称
+		</dd>
 	</dl>
 	<dl class="clearfix">
 		<dt>資本金</dt>
@@ -72,11 +74,11 @@ jQuery(function($) {
 	  FAX:03-6384-5832</dd>
 	</dl>
 	<dl class="clearfix">
-		<dt>新宿営業所</dt>
-		<dd>〒160-0023<br />
-		東京都新宿区西新宿1-20-3 西新宿髙木ビル　8階<br />
-		TEL：<a href="tel:03-6890-3310">03-6890-3310</a><br />
-		FAX：03-6890-3410</dd>
+		<dt>M&M ARC SDN. BHD.（Sentro Management Services Sdn. Bhd.）</dt>
+		<dd>Level 32 Menara Allianz Sentral,<br />
+		203 Jalan Tun Sambanthan, 50470 Kuala Lumpur
+		TEL：<a href="tel:+60-3-2725-8000">+60-3-2725-8000</a><br />
+		事業内容:サービスオフィスの運営・管理<br />Webサイト・アプリケーションの開発・管理</dd>
 	</dl>
 	<dl class="clearfix">
 		<dt>倉庫</dt>
@@ -148,7 +150,7 @@ jQuery(function($) {
 		<dd>資本金1,000万円に増資</dd>
 	</dl>
 	<dl class="clearfix">
-		<dt>平成27年7月</dt>
+		<dt>平成27年7月17日</dt>
 		<dd>社名を株式会社G-GROWTHに改称</dd>
 	</dl>
 	<dl class="clearfix">
@@ -156,7 +158,7 @@ jQuery(function($) {
 		<dd>南青山事務所を開設</dd>
 	</dl>
 	<dl class="clearfix">
-		<dt>令和元年11月26日</dt>
+		<dt>令和元年11月23日</dt>
 		<dd>マレーシアレンタルオフィスSENTRO（M&M ARC SDN. BHD.）を買収</dd>
 	</dl>
 </section>

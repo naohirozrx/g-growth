@@ -162,6 +162,7 @@ jQuery(function($) {
 </section>
 
 <section id="top-company">
+  <img src="<?php echo get_template_directory_uri();?>/images/top-company-image.jpg" alt="top-company-image" width="1920" height="1280" />
   <div class="top-company-text">
     <h2>COMPANY<span>企業情報</span></h2>
     <p>弊社は創業以来、主に給排水衛生設備の職人会社として工事に携わり、一歩ずつ歩みを進め、お客様との信頼関係を築き上げながら、施工以外にも保守や施工管理を含めた会社へと成長してきております。</p>
@@ -176,7 +177,7 @@ jQuery(function($) {
 	<h2 class="h2_n">NEWS & TOPICS<span>新着情報</span></h2>
 	<ul>
   	<li class="clearfix"><a href="">2020.01.22<span>トピックス</span>ホームページをリニューアルしました。<span>READ MORE</span></a></li>
-  	<li class="clearfix"><a href="<?php echo home_url( "/" ); ?>company/corp/#profile-history">2019.11.26<span>トピックス</span>マレーシアレンタルオフィスSENTRO（M&M ARC SDN. BHD.）を買収しました。<span>READ MORE</span></a></li>
+  	<li class="clearfix"><a href="<?php echo home_url( "/" ); ?>company/corp/#profile-history">2019.11.23<span>トピックス</span>マレーシアレンタルオフィスSENTRO（M&M ARC SDN. BHD.）を買収しました。<span>READ MORE</span></a></li>
 		<li class="clearfix"><a href="https://employment.en-japan.com/desc_860826/?arearoute=2&aroute=3&PK=FE1029" target="_blank">2017.02.15<span>トピックス</span>エン・ジャパンに求人情報を掲載しました。<span>READ MORE</span></a></li>
 		<li class="clearfix"><a href="">2017.02.01<span>トピックス</span>サイト更新いたしました。<span>READ MORE</span></a></li>
 		<li class="clearfix"><a href="">2017.09.18<span>トピックス</span>ホームページリニューアルしました<span>READ MORE</span></a></li>

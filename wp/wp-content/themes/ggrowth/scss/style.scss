@@ -1245,6 +1245,14 @@ a {
     margin: 50px 0;
     width: 100%;
   }
+  > image {
+    display: none;
+    @media screen and (max-width: 780px) {
+      display: block;
+      width: 100%;
+      height: auto;
+    }
+  }
   .top-company-text {
     background-image: url(./images/top-company-bg.png);
     background-repeat: no-repeat;
