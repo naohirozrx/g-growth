@@ -1,6 +1,9 @@
 <?php get_header( ); ?>
 <script>
 jQuery(function($) {
+  $('#header').addClass('other');
+});
+jQuery(function($) {
 	$('#plumbing-content').on('inview', function(event, isInView, visiblePartX, visiblePartY) {
 		if(isInView){
 			$(this).stop().addClass('mvcover');

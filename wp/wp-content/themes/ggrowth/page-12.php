@@ -1,6 +1,9 @@
 <?php get_header( ); ?>
 <script>
 jQuery(function($) {
+  $('#header').addClass('other');
+});
+jQuery(function($) {
 	$('#profile-content h2').on('inview', function(event, isInView, visiblePartX, visiblePartY) {
 		if(isInView){
 			$(this).stop().addClass('mvcover');
@@ -152,5 +155,10 @@ jQuery(function($) {
 		<dt>平成31年1月</dt>
 		<dd>南青山事務所を開設</dd>
 	</dl>
+	<dl class="clearfix">
+		<dt>令和元年11月26日</dt>
+		<dd>マレーシアレンタルオフィスSENTRO（M&M ARC SDN. BHD.）を買収</dd>
+	</dl>
+	 11月26日
 </section>
 <?php get_footer( ); ?>

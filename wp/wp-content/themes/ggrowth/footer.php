@@ -11,7 +11,8 @@
 			</ul>
 			<h5><a href="<?php echo home_url( "/" ); ?>company/"><span>企業情報</span></a></h5>
 			<ul class="clearfix">
-				<li><a href="<?php echo home_url( "/" ); ?>management/">経営理念・代表挨拶</a></li>
+				<li><a href="<?php echo home_url( "/" ); ?>management/">経営理念</a></li>
+				<li><a href="<?php echo home_url( "/" ); ?>company/greeting/">代表挨拶</a></li>
 				<li><a href="<?php echo home_url( "/" ); ?>corp/">会社概要</a></li>
 				<li><a href="<?php echo home_url( "/" ); ?>company/corp/#profile-history">沿革</a></li>
 				<li><a href="<?php echo home_url( "/" ); ?>management/#policy-content">経営方針</a></li>
@@ -29,4 +30,4 @@
 </footer>
 <?php wp_footer(); ?>
 </body>
-</html> 
+</html>

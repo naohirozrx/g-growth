@@ -176,6 +176,7 @@ jQuery(function($) {
 	<h2 class="h2_n">NEWS & TOPICS<span>新着情報</span></h2>
 	<ul>
   	<li class="clearfix"><a href="">2020.01.22<span>トピックス</span>ホームページをリニューアルしました。<span>READ MORE</span></a></li>
+  	<li class="clearfix"><a href="<?php echo home_url( "/" ); ?>company/corp/#profile-history">2019.11.26<span>トピックス</span>マレーシアレンタルオフィスSENTRO（M&M ARC SDN. BHD.）を買収しました。<span>READ MORE</span></a></li>
 		<li class="clearfix"><a href="https://employment.en-japan.com/desc_860826/?arearoute=2&aroute=3&PK=FE1029" target="_blank">2017.02.15<span>トピックス</span>エン・ジャパンに求人情報を掲載しました。<span>READ MORE</span></a></li>
 		<li class="clearfix"><a href="">2017.02.01<span>トピックス</span>サイト更新いたしました。<span>READ MORE</span></a></li>
 		<li class="clearfix"><a href="">2017.09.18<span>トピックス</span>ホームページリニューアルしました<span>READ MORE</span></a></li>

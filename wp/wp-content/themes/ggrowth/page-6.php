@@ -1,4 +1,9 @@
 <?php get_header( ); ?>
+<script>
+jQuery(function($) {
+  $('#header').addClass('other');
+});
+</script>
 <section id="company-image">
 	<h2>Works<span>実績紹介</span></h2>
 </section>
