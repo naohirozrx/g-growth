@@ -159,6 +159,5 @@ jQuery(function($) {
 		<dt>令和元年11月26日</dt>
 		<dd>マレーシアレンタルオフィスSENTRO（M&M ARC SDN. BHD.）を買収</dd>
 	</dl>
-	 11月26日
 </section>
 <?php get_footer( ); ?>
