@@ -32,8 +32,8 @@
 	<div>
 		<img src="<?php echo get_template_directory_uri(); ?>/images/corp-menu-img02.jpg" alt="corp-menu-img02" width="760" height="538" />
 		<div>
-			<h3><a href="<?php echo home_url( "/" ); ?>/company/management/#greeting-content">Greeting<span>社長挨拶</span></a></h3>
-			<span><a href="<?php echo home_url( "/" ); ?>/company/management/#greeting-content">詳細を見る</a></span>
+			<h3><a href="<?php echo home_url( "/" ); ?>/company/greeting/">Greeting<span>社長挨拶</span></a></h3>
+			<span><a href="<?php echo home_url( "/" ); ?>/company/greeting/">詳細を見る</a></span>
 		</div>
 	</div><!--1box END-->
 	<div>
