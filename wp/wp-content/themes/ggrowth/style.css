@@ -1785,11 +1785,30 @@ a {
     width: 100%; } }
 
 #company-image {
-  background: url(images/top-img01.jpg);
-  background-position: center bottom;
+  background: url(./images/top-img01.jpg);
+  background-position: center;
   background-size: cover;
   background-attachment: fixed;
-  height: 400px; }
+  height: 400px;
+  position: relative; }
+  #company-image .top-inview {
+    position: absolute;
+    top: 0;
+    right: 0;
+    z-index: 10000;
+    width: 200%;
+    height: 100%;
+    content: '';
+    background-image: url(./images/inview_bg1.png);
+    background-repeat: no-repeat;
+    background-position: right center;
+    background-size: 100% 101%; }
+    #company-image .top-inview.inview {
+      -webkit-animation: inview_ani 1.5s ease-in-out 0s forwards;
+      -moz-animation: inview_ani 1.5s ease-in-out 0s forwards;
+      -o-animation: inview_ani 1.5s ease-in-out 0s forwards;
+      -ms-animation: inview_ani 1.5s ease-in-out 0s forwards;
+      animation: inview_ani 1.5s ease-in-out 0s forwards; }
   #company-image h2 {
     font-family: Industry;
     font-size: 32px;
@@ -2295,3 +2314,36 @@ a {
     width: 100%;
     margin: 32px auto;
     padding: 0 16px; } }
+
+#greeting-2020 {
+  background-image: url(./images/greeting_bg.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  width: 100vw;
+  height: 100vh;
+  min-height: 700px;
+  position: relative; }
+  #greeting-2020 > div {
+    background: linear-gradient(90deg, rgba(4, 95, 105, 0.7), rgba(94, 194, 227, 0.7));
+    padding: 100px;
+    position: absolute;
+    box-sizing: border-box;
+    left: 0;
+    top: calc(50% - 252px);
+    width: 50%;
+    color: #FFF;
+    text-align: left; }
+    @media screen and (max-width: 1300px) {
+      #greeting-2020 > div {
+        padding: 100px 50px; } }
+    #greeting-2020 > div h2 {
+      font-size: 40px;
+      font-weight: 300;
+      letter-spacing: .2em;
+      display: flex;
+      padding-bottom: .5em;
+      margin-bottom: 1em;
+      border-bottom: 2px solid #FFF; }
+      #greeting-2020 > div h2 span {
+        font-size: 18px;
+        margin-left: 1em; }

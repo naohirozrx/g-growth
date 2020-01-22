@@ -1,6 +1,25 @@
 <?php get_header( ); ?>
+<script>
+  jQuery(function($) {
+  	$('#company-image').on('inview', function(event, isInView, visiblePartX, visiblePartY) {
+  		if(isInView){
+  			$('#company-image .top-inview').stop().addClass('inview');
+  			$('#header').stop().removeClass('other');
+  		} else {
+        $('#header').stop().addClass('other');
+  		}
+  	});
+
+  	$('#top-vision').on('inview', function(event, isInView, visiblePartX, visiblePartY) {
+  		if(isInView){
+  			$('#top-vision .vision-over').stop().addClass('inview');
+  		}
+  	});
+	});
+</script>
 <section id="company-image">
 	<h2>Company<span>会社概要</span></h2>
+	<div class="top-inview"></div>
 </section>
 <section id="company-contents" class="clearfix">
 	<div>

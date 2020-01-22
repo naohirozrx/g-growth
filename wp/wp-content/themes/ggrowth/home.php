@@ -7,13 +7,14 @@
         <dd>グループ企業を目指します</dd>
       </dl>
       <dl>
-        <dt>GROBAL</dt>
-        <dd>世界を目指します</dd>
-      </dl>
-      <dl>
         <dt>GREAT</dt>
         <dd>より良い仕事をします</dd>
       </dl>
+      <dl>
+        <dt>GROBAL</dt>
+        <dd>世界を目指します</dd>
+      </dl>
+
       <p>私たちは、常にお客様の視点に立ち、付加価値サービスの継続的な向上を図り、<br />
         皆様からの期待と信頼を寄せられる企業を目指しております。</p>
     </div>
@@ -104,7 +105,7 @@ jQuery(function($) {
       業</h3>
     <ul>
       <li>
-        <a href="">
+        <a href="<?php echo home_url( "/" ); ?>service/">
           <figure>
             <img src="<?php echo get_template_directory_uri();?>/images/service-icon01.svg" alt="service-icon01" />
           </figure>
@@ -112,7 +113,7 @@ jQuery(function($) {
           <p>ビル・商号施設などの空調システム、給水・給湯・排水・通気設備等の器具設置及び配管工事、及びその保守・メンテナンス事業</p>
         </a>
       </li>
-      <li>
+      <!--<li>
         <a href="">
           <figure>
             <img src="<?php echo get_template_directory_uri();?>/images/service-icon02.svg" alt="service-icon02" />
@@ -120,7 +121,7 @@ jQuery(function($) {
           <h4>リニューアル部門</h4>
           <p>個人宅リフォーム・ビル・施設などの建物内の改装まで屋内外内装業務を行なっております。</p>
         </a>
-      </li>
+      </li>-->
     </ul>
     <figure>
       <img src="<?php echo get_template_directory_uri();?>/images/japan-image.svg" alt="japan-image" />
@@ -135,15 +136,15 @@ jQuery(function($) {
       業</h3>
     <ul>
       <li>
-        <a href="">
+        <a href="https://sentro.asia/" target="_blank">
           <figure>
-            <img src="<?php echo get_template_directory_uri();?>/images/service-icon01.svg" alt="service-icon01" />
+            <img src="<?php echo get_template_directory_uri();?>/images/service-icon03.png" alt="service-icon03" />
           </figure>
           <h4>レンタルオフィス</h4>
           <p>マレーシア初 ! 日系サービスオフィス マレーシア進出 バーチャルオフィス 貸オフィス MSC 取得 を支援します。</p>
         </a>
       </li>
-      <li>
+      <!--<li>
         <a href="">
           <figure>
             <img src="<?php echo get_template_directory_uri();?>/images/service-icon02.svg" alt="service-icon02" />
@@ -151,7 +152,7 @@ jQuery(function($) {
           <h4>リニューアル部門</h4>
           <p>個人宅リフォーム・ビル・施設などの建物内の改装まで屋内外内装業務を行なっております。</p>
         </a>
-      </li>
+      </li>-->
     </ul>
     <figure>
       <img src="<?php echo get_template_directory_uri();?>/images/world-image.svg" alt="japan-image" />
@@ -174,6 +175,7 @@ jQuery(function($) {
 <section id="top-news">
 	<h2 class="h2_n">NEWS & TOPICS<span>新着情報</span></h2>
 	<ul>
+  	<li class="clearfix"><a href="">2020.01.22<span>トピックス</span>ホームページをリニューアルしました。<span>READ MORE</span></a></li>
 		<li class="clearfix"><a href="https://employment.en-japan.com/desc_860826/?arearoute=2&aroute=3&PK=FE1029" target="_blank">2017.02.15<span>トピックス</span>エン・ジャパンに求人情報を掲載しました。<span>READ MORE</span></a></li>
 		<li class="clearfix"><a href="">2017.02.01<span>トピックス</span>サイト更新いたしました。<span>READ MORE</span></a></li>
 		<li class="clearfix"><a href="">2017.09.18<span>トピックス</span>ホームページリニューアルしました<span>READ MORE</span></a></li>
