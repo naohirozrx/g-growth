@@ -359,8 +359,7 @@ a {
     position: fixed;
     top: 0;
     left: 0;
-    z-index: 1000;
-    background: #FFF;
+    z-index: 10000;
   }
 }
 
@@ -701,12 +700,20 @@ a {
       position: absolute;
       left: 100px;
       top: calc(50% - 145px);
+      @media screen and (max-width: 780px) {
+        left: 50px;
+        top: 100px;
+      }
       dl {
         text-align: left;
         display: flex;
         color: #FFF;
         margin-bottom: 60px;
         letter-spacing: 1em;
+        @media screen and (max-width: 780px) {
+          display: block;
+          margin-bottom: 30px;
+        }
         dt {
           font-size: 40px;
           width: 260px;
@@ -716,6 +723,9 @@ a {
           @media screen and (max-width: 1120px) {
             font-size: 24px;
             width: 200px;
+          }
+          @media screen and (max-width: 780px) {
+            margin-bottom: 10px;
           }
         }
         dd {
@@ -731,6 +741,10 @@ a {
         font-size: 14px;
         font-weight: 300;
         color: #FFF;
+        @media screen and (max-width: 780px) {
+          padding-right: 50px;
+          font-size: 12px;
+        }
       }
     }
     .earth {
@@ -747,6 +761,9 @@ a {
       @media screen and (max-width: 1120px) {
         width: 300px;
         top: calc(50% - 150px);
+      }
+      @media screen and (max-width: 780px) {
+        top: 440px;
       }
     }
   }
@@ -912,6 +929,13 @@ a {
       font-weight: 300;
       border-bottom: 2px solid #FFF;
       padding-bottom: 20px;
+      @media screen and (max-width: 780px) {
+        font-size: 20px;
+        letter-spacing: 0.3em;
+        left: 20px;
+        bottom: 20px;
+        padding-bottom: 10px;
+      }
     }
   }//.vision-title END
   .vision-contents {
@@ -920,9 +944,15 @@ a {
     display: flex;
     justify-content: center;
     align-items: center;
+    @media screen and (max-width: 780px) {
+      display: block;
+    }
     figure {
       width: 430px;
       margin-right: 100px;
+      @media screen and (max-width: 780px) {
+        width: 100%;
+      }
       img {
         width: 100%;
         height: auto;
@@ -989,11 +1019,18 @@ a {
     letter-spacing: .3em;
     display: flex;
     align-items: center;
+    @media screen and (max-width: 780px) {
+      font-size: 32px;
+    }
     span {
       margin-left: 1em;
       display: inline-block;
       font-size: 18px;
+      @media screen and (max-width: 780px) {
+        font-size: 16px;
+      }
     }
+
   }//h2 END
   .japan {
     overflow: hidden;
@@ -1148,6 +1185,10 @@ a {
         @media screen and (max-width: 1400px) {
           width: 250px;
         }
+        @media screen and (max-width: 1400px) {
+          margin-left: 66px;
+          margin-right: inherit;
+        }
         a {
           background: #FFF;
           display: block;
@@ -1200,6 +1241,10 @@ a {
   margin: 100px 5%;
   position: relative;
   overflow: hidden;
+  @media screen and (max-width: 780px) {
+    margin: 50px 0;
+    width: 100%;
+  }
   .top-company-text {
     background-image: url(./images/top-company-bg.png);
     background-repeat: no-repeat;
@@ -1216,12 +1261,23 @@ a {
     align-items: center;
     text-align: right;
     justify-content: center;
+    @media screen and (max-width: 780px) {
+      background: #DFDFDF;
+      padding: 50px 24px;
+      margin: 0;
+      width: 100%;
+      display: block;
+      height: auto;
+    }
     h2 {
       font-size: 32px;
       display: flex;
       align-items: center;
       justify-content: flex-end;
       margin-bottom: 1em;
+      @media screen and (max-width: 780px) {
+        justify-content: center;
+      }
       span {
         font-size: 16px;
         margin-left: 1em;
@@ -1230,6 +1286,9 @@ a {
     p {
       padding-left: 200px;
       text-align: left;
+      @media screen and (max-width: 780px) {
+        padding: 0;
+      }
     }
     a {
       background: #39ABCB;
@@ -1238,6 +1297,10 @@ a {
       position: relative;
       margin-left: 200px;
       margin-top: 32px;
+      @media screen and (max-width: 780px) {
+        margin: 20px 0 0;
+        display: block;
+      }
       &:before {
         position: absolute;
         top: 0;
@@ -1261,6 +1324,9 @@ a {
         display: inline-block;
         position: relative;
         z-index: 2;
+        @media screen and (max-width: 780px) {
+          padding: 1em;
+        }
         i {
           margin-left: 1em;
           transition: .3s;
@@ -2941,6 +3007,10 @@ a {
   height: 100vh;
   min-height: 700px;
   position: relative;
+  @media screen and (max-width: 780px) {
+    background: no-repeat;
+    height: auto;
+  }
   > div {
     background: linear-gradient(90deg, rgba(4,95,105,0.7), rgba(94,194,227,0.7));
     padding: 100px;
@@ -2954,6 +3024,12 @@ a {
     @media screen and (max-width: 1300px) {
       padding: 100px 50px;
     }
+    @media screen and (max-width: 780px) {
+      position: inherit;
+      top: 0;
+      width: 100%;
+      padding: 50px;
+    }
     h2 {
       font-size: 40px;
       font-weight: 300;
@@ -2962,10 +3038,24 @@ a {
       padding-bottom: .5em;
       margin-bottom: 1em;
       border-bottom: 2px solid #FFF;
+      @media screen and (max-width: 780px) {
+        font-size: 24px;
+      }
       span {
         font-size: 18px;
         margin-left: 1em;
+        @media screen and (max-width: 780px) {
+          font-size: 14px;
+        }
       }
+    }
+  }
+  > img {
+    display: none;
+    @media screen and (max-width: 780px) {
+      display: block;
+      width: 100%;
+      height: auto;
     }
   }
 }

@@ -340,8 +340,7 @@ a {
     position: fixed;
     top: 0;
     left: 0;
-    z-index: 1000;
-    background: #FFF; } }
+    z-index: 10000; } }
 
 @media screen and (max-width: 740px) {
   #header h1 {
@@ -600,12 +599,20 @@ a {
       position: absolute;
       left: 100px;
       top: calc(50% - 145px); }
+      @media screen and (max-width: 780px) {
+        #top-image .grad .text-contents {
+          left: 50px;
+          top: 100px; } }
       #top-image .grad .text-contents dl {
         text-align: left;
         display: flex;
         color: #FFF;
         margin-bottom: 60px;
         letter-spacing: 1em; }
+        @media screen and (max-width: 780px) {
+          #top-image .grad .text-contents dl {
+            display: block;
+            margin-bottom: 30px; } }
         #top-image .grad .text-contents dl dt {
           font-size: 40px;
           width: 260px; }
@@ -616,6 +623,9 @@ a {
             #top-image .grad .text-contents dl dt {
               font-size: 24px;
               width: 200px; } }
+          @media screen and (max-width: 780px) {
+            #top-image .grad .text-contents dl dt {
+              margin-bottom: 10px; } }
         #top-image .grad .text-contents dl dd {
           font-size: 18px;
           letter-spacing: .5em; }
@@ -627,6 +637,10 @@ a {
         font-size: 14px;
         font-weight: 300;
         color: #FFF; }
+        @media screen and (max-width: 780px) {
+          #top-image .grad .text-contents p {
+            padding-right: 50px;
+            font-size: 12px; } }
     #top-image .grad .earth {
       position: absolute;
       top: calc(50% - 275px);
@@ -641,6 +655,9 @@ a {
         #top-image .grad .earth {
           width: 300px;
           top: calc(50% - 150px); } }
+      @media screen and (max-width: 780px) {
+        #top-image .grad .earth {
+          top: 440px; } }
   #top-image .scroll {
     position: absolute;
     left: 50px;
@@ -767,15 +784,28 @@ a {
       font-weight: 300;
       border-bottom: 2px solid #FFF;
       padding-bottom: 20px; }
+      @media screen and (max-width: 780px) {
+        #top-vision .vision-title h2 {
+          font-size: 20px;
+          letter-spacing: 0.3em;
+          left: 20px;
+          bottom: 20px;
+          padding-bottom: 10px; } }
   #top-vision .vision-contents {
     padding-top: 100px;
     max-width: 1180px;
     display: flex;
     justify-content: center;
     align-items: center; }
+    @media screen and (max-width: 780px) {
+      #top-vision .vision-contents {
+        display: block; } }
     #top-vision .vision-contents figure {
       width: 430px;
       margin-right: 100px; }
+      @media screen and (max-width: 780px) {
+        #top-vision .vision-contents figure {
+          width: 100%; } }
       #top-vision .vision-contents figure img {
         width: 100%;
         height: auto; }
@@ -827,10 +857,16 @@ a {
   letter-spacing: .3em;
   display: flex;
   align-items: center; }
+  @media screen and (max-width: 780px) {
+    #top-service h2 {
+      font-size: 32px; } }
   #top-service h2 span {
     margin-left: 1em;
     display: inline-block;
     font-size: 18px; }
+    @media screen and (max-width: 780px) {
+      #top-service h2 span {
+        font-size: 16px; } }
 
 #top-service .japan {
   overflow: hidden;
@@ -969,6 +1005,10 @@ a {
       @media screen and (max-width: 1400px) {
         #top-service .world ul li {
           width: 250px; } }
+      @media screen and (max-width: 1400px) {
+        #top-service .world ul li {
+          margin-left: 66px;
+          margin-right: inherit; } }
       #top-service .world ul li a {
         background: #FFF;
         display: block;
@@ -1009,6 +1049,10 @@ a {
   margin: 100px 5%;
   position: relative;
   overflow: hidden; }
+  @media screen and (max-width: 780px) {
+    #top-company {
+      margin: 50px 0;
+      width: 100%; } }
   #top-company .top-company-text {
     background-image: url(./images/top-company-bg.png);
     background-repeat: no-repeat;
@@ -1025,18 +1069,32 @@ a {
     align-items: center;
     text-align: right;
     justify-content: center; }
+    @media screen and (max-width: 780px) {
+      #top-company .top-company-text {
+        background: #DFDFDF;
+        padding: 50px 24px;
+        margin: 0;
+        width: 100%;
+        display: block;
+        height: auto; } }
     #top-company .top-company-text h2 {
       font-size: 32px;
       display: flex;
       align-items: center;
       justify-content: flex-end;
       margin-bottom: 1em; }
+      @media screen and (max-width: 780px) {
+        #top-company .top-company-text h2 {
+          justify-content: center; } }
       #top-company .top-company-text h2 span {
         font-size: 16px;
         margin-left: 1em; }
     #top-company .top-company-text p {
       padding-left: 200px;
       text-align: left; }
+      @media screen and (max-width: 780px) {
+        #top-company .top-company-text p {
+          padding: 0; } }
     #top-company .top-company-text a {
       background: #39ABCB;
       display: inline-block;
@@ -1044,6 +1102,10 @@ a {
       position: relative;
       margin-left: 200px;
       margin-top: 32px; }
+      @media screen and (max-width: 780px) {
+        #top-company .top-company-text a {
+          margin: 20px 0 0;
+          display: block; } }
       #top-company .top-company-text a:before {
         position: absolute;
         top: 0;
@@ -1065,6 +1127,9 @@ a {
         display: inline-block;
         position: relative;
         z-index: 2; }
+        @media screen and (max-width: 780px) {
+          #top-company .top-company-text a span {
+            padding: 1em; } }
         #top-company .top-company-text a span i {
           margin-left: 1em;
           transition: .3s; }
@@ -2324,6 +2389,10 @@ a {
   height: 100vh;
   min-height: 700px;
   position: relative; }
+  @media screen and (max-width: 780px) {
+    #greeting-2020 {
+      background: no-repeat;
+      height: auto; } }
   #greeting-2020 > div {
     background: linear-gradient(90deg, rgba(4, 95, 105, 0.7), rgba(94, 194, 227, 0.7));
     padding: 100px;
@@ -2337,6 +2406,12 @@ a {
     @media screen and (max-width: 1300px) {
       #greeting-2020 > div {
         padding: 100px 50px; } }
+    @media screen and (max-width: 780px) {
+      #greeting-2020 > div {
+        position: inherit;
+        top: 0;
+        width: 100%;
+        padding: 50px; } }
     #greeting-2020 > div h2 {
       font-size: 40px;
       font-weight: 300;
@@ -2345,6 +2420,19 @@ a {
       padding-bottom: .5em;
       margin-bottom: 1em;
       border-bottom: 2px solid #FFF; }
+      @media screen and (max-width: 780px) {
+        #greeting-2020 > div h2 {
+          font-size: 24px; } }
       #greeting-2020 > div h2 span {
         font-size: 18px;
         margin-left: 1em; }
+        @media screen and (max-width: 780px) {
+          #greeting-2020 > div h2 span {
+            font-size: 14px; } }
+  #greeting-2020 > img {
+    display: none; }
+    @media screen and (max-width: 780px) {
+      #greeting-2020 > img {
+        display: block;
+        width: 100%;
+        height: auto; } }
