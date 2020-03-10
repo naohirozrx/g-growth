@@ -1,13 +1,4 @@
 <?php if(is_home()):?>
-<?php
-ini_set( 'session.gc_maxlifetime', 120 );
-session_start();
-if (isset($_SESSION["count"])) {
-  $_SESSION["count"]++;
-} else {
-  $_SESSION["count"] = 1;
-}
-?>
 <?php endif; ?>
 <html <?php language_attributes(); ?> class="no-js">
 <head>
@@ -30,13 +21,18 @@ if (isset($_SESSION["count"])) {
   <link href="<?php echo get_template_directory_uri(); ?>/fontawesome/css/all.min.css" rel="stylesheet">
 </head>
 <body <?php body_class(); ?>>
+
 	<div id="loader-bg">
 	  <div id="loader">
-	    <img src="<?php echo get_template_directory_uri(); ?>/images/loader_img.gif" alt="loader_img" width="48" height="48" />
-	    <p>G-GROWTH</p>
+	    <div class="boxLoading">
+      </div>
 	  </div>
 	</div>
 	<script>
+  	$(window).on('load', function() {
+      $('#loader-bg').delay(900).fadeOut(800); //$('#loader-bg').fadeOut(800);でも可
+      $('#loader').delay(600).fadeOut(300); //$('#loader').fadeOut(300);でも可
+    });
 		$(function(){
 			$(".smp_toggle").on("click",function(){
 				$(this).toggleClass("menu_close");

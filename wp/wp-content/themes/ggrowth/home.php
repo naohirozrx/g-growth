@@ -45,6 +45,7 @@
 	<div class="top-inview"></div>
 </section>
 <script>
+$(window).on('load', function() {
 jQuery(function($) {
 	$('#top-image').on('inview', function(event, isInView, visiblePartX, visiblePartY) {
 		if(isInView){
@@ -74,6 +75,7 @@ jQuery(function($) {
 			$('#top-company .vision-over').stop().addClass('inview');
 		}
 	});
+});
 });
 </script>
 <section id="top-vision">
@@ -113,15 +115,15 @@ jQuery(function($) {
           <p>ビル・商号施設などの空調システム、給水・給湯・排水・通気設備等の器具設置及び配管工事、及びその保守・メンテナンス事業</p>
         </a>
       </li>
-      <!--<li>
-        <a href="">
+      <li>
+        <a href="https://www.reform-station.co.jp/" target="_blank">
           <figure>
             <img src="<?php echo get_template_directory_uri();?>/images/service-icon02.svg" alt="service-icon02" />
           </figure>
           <h4>リニューアル部門</h4>
           <p>個人宅リフォーム・ビル・施設などの建物内の改装まで屋内外内装業務を行なっております。</p>
         </a>
-      </li>-->
+      </li>
     </ul>
     <figure>
       <img src="<?php echo get_template_directory_uri();?>/images/japan-image.svg" alt="japan-image" />

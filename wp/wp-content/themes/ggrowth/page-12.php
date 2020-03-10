@@ -78,7 +78,19 @@ jQuery(function($) {
 		<dd>Level 32 Menara Allianz Sentral,<br />
 		203 Jalan Tun Sambanthan, 50470 Kuala Lumpur
 		TEL：<a href="tel:+60-3-2725-8000">+60-3-2725-8000</a><br />
-		事業内容:サービスオフィスの運営・管理<br />Webサイト・アプリケーションの開発・管理</dd>
+		事業内容:サービスオフィスの運営・管理<br />
+		Webサイト・アプリケーションの開発・管理<br />
+		<a href="https://sentro.asia/" target="_blank">SENTROホームページはこちら <i class="fal fa-external-link"></i></a></dd>
+	</dl>
+	<dl class="clearfix">
+		<dt>リフォームステーション</dt>
+		<dd>〒222-0002<br />
+			横浜市港北区師岡町700番地トレッサ横浜 南棟3階
+		TEL：<a href="tel:045-534-2332​">045-534-2332</a><br />
+		営業時間	10:00~21:00（年中無休）<br />
+		駐車場	施設駐車場あり<br />
+		<a href="https://www.reform-station.co.jp/" target="_blank">リフォームステーションホームページはこちら <i class="fal fa-external-link"></i></a>
+	</dd>
 	</dl>
 	<dl class="clearfix">
 		<dt>倉庫</dt>
@@ -98,6 +110,7 @@ jQuery(function($) {
 空気調和設備工事<br />
 ビルサービス、保守点検業務他<br />
 各種設備設計</li>
+			<li>リフォーム リノベーション</li>
 			<li>前項に付帯する関連工事に伴う資材の販売及び設置</li>
 		</ol>
 		</dd>
