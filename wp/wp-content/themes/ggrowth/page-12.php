@@ -174,5 +174,9 @@ jQuery(function($) {
 		<dt>令和元年11月23日</dt>
 		<dd>マレーシアレンタルオフィスSENTRO（M&M ARC SDN. BHD.）を買収</dd>
 	</dl>
+	<dl class="clearfix">
+		<dt>令和2年2月5日</dt>
+		<dd>リフォームステーションを買収</dd>
+	</dl>
 </section>
 <?php get_footer( ); ?>
