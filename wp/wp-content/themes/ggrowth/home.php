@@ -27,8 +27,6 @@
 	<div class="top-images">
 		<div class="carousel-cell"></div>
 		<div class="carousel-cell"></div>
-		<div class="carousel-cell"></div>
-		<div class="carousel-cell"></div>
 	</div>
 	<script>
 		$('.top-images').bxSlider({
@@ -112,7 +110,7 @@ jQuery(function($) {
             <img src="<?php echo get_template_directory_uri();?>/images/service-icon01.svg" alt="service-icon01" />
           </figure>
           <h4>衛生空調設備</h4>
-          <p>ビル・商号施設などの空調システム、給水・給湯・排水・通気設備等の器具設置及び配管工事、及びその保守・メンテナンス事業</p>
+          <p>ビル・商業施設などの空調システム、給水・給湯・排水・通気設備等の器具設置及び配管工事、及びその保守・メンテナンス事業</p>
         </a>
       </li>
       <li>
@@ -178,13 +176,15 @@ jQuery(function($) {
 <section id="top-news">
 	<h2 class="h2_n">NEWS & TOPICS<span>新着情報</span></h2>
 	<ul>
-  	<li class="clearfix"><a href="">2020.03.19<span>トピックス</span>ホームページをリニューアルしました。<span>READ MORE</span></a></li>
-  	<li class="clearfix"><a href="https://www.reform-station.co.jp/" target="_blank">2020.02.05<span>トピックス</span>リフォームステーションを買収しました。<span>READ MORE</span></a></li>
-  	<li class="clearfix"><a href="">2020.01.22<span>トピックス</span>ホームページをリニューアルしました。<span>READ MORE</span></a></li>
-  	<li class="clearfix"><a href="<?php echo home_url( "/" ); ?>company/corp/#profile-history">2019.11.23<span>トピックス</span>マレーシアレンタルオフィスSENTRO（M&M ARC SDN. BHD.）を買収しました。<span>READ MORE</span></a></li>
-		<li class="clearfix"><a href="https://employment.en-japan.com/desc_860826/?arearoute=2&aroute=3&PK=FE1029" target="_blank">2017.02.15<span>トピックス</span>エン・ジャパンに求人情報を掲載しました。<span>READ MORE</span></a></li>
-		<li class="clearfix"><a href="">2017.02.01<span>トピックス</span>サイト更新いたしました。<span>READ MORE</span></a></li>
-		<li class="clearfix"><a href="">2017.09.18<span>トピックス</span>ホームページリニューアルしました<span>READ MORE</span></a></li>
+    <?php $args = array(
+      'post_type' => 'post',
+      'posts_per_page' => 10,
+    ); ?>
+    <?php query_posts( $args ); ?>
+    <?php if (have_posts()) : while (have_posts()) : the_post(); ?>
+      <li class="clearfix"><a href="<?php the_permalink(); ?>"><?php the_time( 'Y.m.d' );?><span>トピックス</span><?php the_title(); ?><span>READ MORE</span></a></li>
+    <?php endwhile; else: endif; ?>
+    <?php wp_reset_query(); ?>
 	</ul>
 </section>
 <?php if( $_SESSION["count"] == 1):?>
